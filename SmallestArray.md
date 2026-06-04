@@ -15,8 +15,22 @@ Output:
 ## Java Code
 
 ```java
-import java.util.Scanner.*;
-class file name
+import java.util.*;
+class file name{
+public static int getSmallest(int numbers[]){
+int Smallest = Integer.MAX_VALUE;
+for(int i=0;i<numbers.length; i++){
+if(Smallest > numbers[i]){
+Smallest = numbers[i];
+}
+}
+return Smallest ;
+}
+public static void main(String args[]){
+int numbers[] = {5, 2, 8, 1, 9};
+System.out.println("The Smallest Number is: " +getSmallest(numbers));
+}
+}
 ```
 
 ## Time Complexity
